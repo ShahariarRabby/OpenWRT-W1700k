@@ -1,6 +1,9 @@
 src-git packages https://github.com/openwrt/packages.git
 src-git luci https://github.com/openwrt/luci.git
 src-git routing https://github.com/openwrt/routing.git
+# Argon theme repo is a single-package layout (no feed index),
+# so we vendor it as a local package under package/ instead.
+#src-git argon https://github.com/jerrykuku/luci-theme-argon.git
 #src-git telephony https://github.com/openwrt/telephony.git
 #src-git video https://github.com/openwrt/video.git
 #src-git targets https://github.com/openwrt/targets.git
