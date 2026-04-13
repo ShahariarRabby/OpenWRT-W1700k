@@ -1,0 +1,2 @@
+* * * * * /etc/wifi-watchdog.sh
+@reboot sleep 30 && /etc/wifi-boot-check.sh
