@@ -36,3 +36,7 @@ sort -u files/etc/crontabs/root > /tmp/cron-clean && mv /tmp/cron-clean files/et
 # Verify
 ls -la files/etc/
 ls -la files/etc/uci-defaults/
+
+
+# Run this on your PC
+ssh root@100.118.233.23 "dd if=/dev/mtd2 | gzip" > ~/Desktop/rabby/openwrt_w1700k/OpenW1700kw1700k_ubi_backup_$(date +%Y%m%d).bin.gz && echo "✅ Backup done!"
